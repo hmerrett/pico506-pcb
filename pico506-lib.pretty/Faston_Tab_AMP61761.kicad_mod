@@ -1,0 +1,29 @@
+(footprint "Faston_Tab_AMP61761"
+  (version 20240108)
+  (generator "pico506_gen")
+  (layer "F.Cu")
+  (descr "Frame ground: AMP 61761-2 0.187in PCB faston tab (3.3mm hole), or bolt a ring lug")
+  (attr through_hole)
+  (pad "1" thru_hole circle
+    (at 0 0)
+    (size 7 7)
+    (drill 3.3)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+  )
+  (fp_text reference "REF**"
+    (at 0 -4.8 0)
+    (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "FRAME GND"
+    (at 0 4.8 0)
+    (layer "F.Fab")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text user "FRAME GND"
+    (at 0 4.8 0)
+    (layer "F.SilkS")
+    (effects (font (size 0.8 0.8) (thickness 0.12)))
+  )
+)

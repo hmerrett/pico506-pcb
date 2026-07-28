@@ -1,0 +1,14 @@
+.DS_Store
+
+# Python (tools/ generators)
+__pycache__/
+*.py[cod]
+
+# KiCad local/derived state
+*.kicad_prl
+fp-info-cache
+*-backups/
+
+# Loose gerbers: doc/pico506-gerbers.zip is the copy you send a fab, and
+# tools/export.sh regenerates both. The renders stay tracked — README embeds them.
+doc/gerber/
