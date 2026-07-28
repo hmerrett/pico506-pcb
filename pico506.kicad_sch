@@ -8,6 +8,9 @@
     (date "2026-07-27")
     (rev "1.0")
     (comment 1 "Drop-in replacement PCB for classic 5.25-inch MFM drives")
+    (comment 2 "Board: github.com/hmerrett/pico506-pcb")
+    (comment 3 "Firmware: github.com/kuba2k2/pico506 (c) 2025 Kuba Szczodrzynski")
+    (comment 4 "Licensed GPL-3.0-or-later. Design files: see Board above.")
   )
   (lib_symbols
     (symbol "74xx:74LS05"
@@ -3229,7 +3232,7 @@
     (effects (font (size 3 3) (bold yes)) (justify left bottom))
     (uuid "4ce012f3-87fc-595d-b0a2-30f496e643b0")
   )
-  (text "Firmware: github/kuba2k2 pico506 (RP2040).  Bus signals are active-low 5V TTL; Pico-side signals are active-high 3V3 behind 74LS05 open-collector inverters."
+  (text "Firmware: github.com/kuba2k2/pico506 (RP2040).  Bus signals are active-low 5V TTL; Pico-side signals are active-high 3V3 behind 74LS05 open-collector inverters."
     (exclude_from_sim no)
     (at 20 26 0)
     (effects (font (size 1.5 1.5)) (justify left bottom))

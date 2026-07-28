@@ -583,8 +583,13 @@ BOARD_TEXTS = [
     ("MFM/RLL HDD EMULATOR", 20, 37.5, "F.SilkS", 1.0, 0, False, False),
     # the branding sat over the DIP and Pico pad rows; the clear span on the
     # back is between the Pico's two pin rows, which carry no pads of their own
-    ("PICO506  REV 1.0", 59, 20.0, "B.SilkS", 2.4, 0, True, True),
-    ("github.com/kuba2k2/pico506", 59, 23.5, "B.SilkS", 1.2, 0, False, True),
+    # (rows at y = 9.0 and 26.78, 1.6 mm pads, so silk is free from 9.8 to 25.98
+    # across x = 35..83.26 — the three lines below are sized to sit inside that)
+    ("PICO506  REV 1.0", 59, 19.0, "B.SilkS", 2.4, 0, True, True),
+    # this board's own repo, so a bare PCB points at its own design files
+    ("github.com/hmerrett/pico506-pcb", 59, 22.0, "B.SilkS", 1.2, 0, False, True),
+    # and the firmware it exists to carry, which is someone else's work
+    ("FIRMWARE: github.com/kuba2k2/pico506", 59, 24.2, "B.SilkS", 1.0, 0, False, True),
     ("J1 CONTROL", L.J1_CENTER_X, 66.3, "F.SilkS", 1.0, 0, False, False),
     ("J2 DATA", L.J2_CENTER_X, 66.3, "F.SilkS", 1.0, 0, False, False),
     ("DS 4 3 2 1", 84.3, 58.2, "F.SilkS", 0.8, 0, False, False),

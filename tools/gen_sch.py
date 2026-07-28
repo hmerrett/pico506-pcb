@@ -315,7 +315,7 @@ def place(ref, unit, X, Y, rot=0, label_len=0.0, skip_pins=(), power_as_label=()
 def build():
     # ---- headline notes ----
     emit_text("PICO506 — ST-506 / MFM / RLL HARD DRIVE EMULATOR", 20, 20, 3.0, bold=True)
-    emit_text("Firmware: github/kuba2k2 pico506 (RP2040).  Bus signals are active-low 5V TTL;"
+    emit_text("Firmware: github.com/kuba2k2/pico506 (RP2040).  Bus signals are active-low 5V TTL;"
               " Pico-side signals are active-high 3V3 behind 74LS05 open-collector inverters.", 20, 26, 1.5)
     emit_text("Outputs are 74LS38 open-collector NAND gated by SELECTED, so a deselected drive"
               " releases the daisy-chained control bus, as ST-506 requires.", 20, 30, 1.5)
@@ -433,7 +433,12 @@ def build():
            ["title_block",
             ["title", q("Pico506 — ST-506/MFM/RLL hard drive emulator")],
             ["date", q("2026-07-27")], ["rev", q("1.0")],
-            ["comment", "1", q("Drop-in replacement PCB for classic 5.25-inch MFM drives")]]]
+            ["comment", "1", q("Drop-in replacement PCB for classic 5.25-inch MFM drives")],
+            ["comment", "2", q("Board: github.com/hmerrett/pico506-pcb")],
+            ["comment", "3", q("Firmware: github.com/kuba2k2/pico506 "
+                               "(c) 2025 Kuba Szczodrzynski")],
+            ["comment", "4", q("Licensed GPL-3.0-or-later. Design files: "
+                               "see Board above.")]]]
     lib = ["lib_symbols"]
     for libid in sorted(set(BYREF[c]["symbol"] for c in BYREF) |
                         set(POWER_NETS.values()) | {"power:PWR_FLAG"}):

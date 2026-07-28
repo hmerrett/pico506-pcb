@@ -8,6 +8,8 @@ __pycache__/
 *.kicad_prl
 fp-info-cache
 *-backups/
+# editor lock file, written whenever the board is open in pcbnew
+*.lck
 
 # Loose gerbers: doc/pico506-gerbers.zip is the copy you send a fab, and
 # tools/export.sh regenerates both. The renders stay tracked — README embeds them.
